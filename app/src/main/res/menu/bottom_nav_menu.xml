@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_vehicles"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Profil" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="History" />
+
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Report" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Settings" />
+
+</menu>
