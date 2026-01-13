@@ -24,7 +24,9 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_marginEnd="16dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/profile_placeholder"
+            tools:srcCompat="@tools:sample/avatars"
+            />
 
         <TextView
             android:id="@+id/tv_welcome"
