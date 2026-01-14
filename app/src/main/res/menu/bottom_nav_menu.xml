@@ -2,27 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
-        android:icon="@android:drawable/ic_menu_rotate"
-        android:title="Home" />
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/home" />
 
     <item
         android:id="@+id/navigation_vehicles"
-        android:icon="@android:drawable/ic_menu_my_calendar"
-        android:title="Profil" />
+        android:icon="@drawable/ic_nav_steering_wheel"
+        android:title="@string/profil" />
 
     <item
         android:id="@+id/navigation_history"
-        android:icon="@android:drawable/ic_menu_my_calendar"
-        android:title="History" />
+        android:icon="@drawable/ic_nav_history"
+        android:title="@string/verlauf" />
 
     <item
         android:id="@+id/navigation_report"
-        android:icon="@android:drawable/ic_menu_my_calendar"
-        android:title="Report" />
+        android:icon="@drawable/ic_nav_reports"
+        android:title="@string/reports" />
 
     <item
         android:id="@+id/navigation_settings"
-        android:icon="@android:drawable/ic_menu_my_calendar"
-        android:title="Settings" />
+        android:icon="@drawable/ic_nav_settings"
+        android:title="@string/einstellungen" />
 
 </menu>
