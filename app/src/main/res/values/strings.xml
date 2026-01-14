@@ -1,8 +1,13 @@
 <resources>
-    <string name="app_name">green-fleet</string>
+    <string name="app_name">Green Fleet</string>
     <string name="home">Home</string>
     <string name="profil">Profil</string>
     <string name="verlauf">Verlauf</string>
     <string name="reports">Reports</string>
     <string name="einstellungen">Einstellungen</string>
+    <string name="tracking_starten">Tracking Starten</string>
+    <string name="profilbild">Profilbild</string>
+    <string name="verfuegbares_fahrzeug">Verfügbares Fahrzeug</string>
+    <string name="fahrzeug_waehlen">Fahrzeug wählen</string>
+    <string name="fahrzeug">Fahrzeug</string>
 </resources>
