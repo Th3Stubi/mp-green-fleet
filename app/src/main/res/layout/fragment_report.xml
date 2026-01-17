@@ -30,6 +30,7 @@
 
     <RadioButton
         android:id="@+id/rbtn_all"
+        android:checked="true"
         style="@style/Theme.Greenfleet.Radiobutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
