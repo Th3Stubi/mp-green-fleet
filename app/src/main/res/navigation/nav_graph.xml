@@ -10,4 +10,11 @@
         android:name="com.example.green_fleet.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fleetFragment"
+        android:name="com.example.green_fleet.FleetFragment"
+        android:label="fragment_fleet"
+        tools:layout="@layout/fragment_fleet" />
+
 </navigation>
