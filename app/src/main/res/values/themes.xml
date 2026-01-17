@@ -9,4 +9,9 @@
     <style name="Theme.Greenfleet.Headline">
         <item name="android:textSize">64sp</item>
     </style>
+
+    <!--General padding for every screen. Is used in activity_main.xml-->
+    <style name="Theme.Greenfleet.GeneralPadding" parent="Base.Theme.Greenfleet">
+        <item name="android:padding">20dp</item>
+    </style>
 </resources>
