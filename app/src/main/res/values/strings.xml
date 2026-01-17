@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Green Fleet</string>
     <string name="home">Home</string>
-    <string name="profil">Profil</string>
+    <string name="nav_fleet">Fleet</string>
     <string name="verlauf">Verlauf</string>
     <string name="reports">Reports</string>
     <string name="einstellungen">Einstellungen</string>
@@ -10,4 +10,6 @@
     <string name="verfuegbares_fahrzeug">Verfügbares Fahrzeug</string>
     <string name="fahrzeug_waehlen">Fahrzeug wählen</string>
     <string name="fahrzeug">Fahrzeug</string>
+    <string name="fleet">Fleet</string>
+    <string name="pfeil_nach_rechts">Pfeil nach rechts</string>
 </resources>
