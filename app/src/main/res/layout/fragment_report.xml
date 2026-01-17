@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportFragment">
+
+    <TextView
+        android:id="@+id/tv_report_heading"
+        style="@style/Theme.Greenfleet.Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/rbtn_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:constraint_referenced_ids="rbtn_all,rbtn_suv,rbtn_cars,rbtn_electro,rbtn_truck,rbtn_motorcycle"
+        app:flow_horizontalStyle="spread"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_report_heading" />
+
+    <RadioButton
+        android:id="@+id/rbtn_all"
+        style="@style/Theme.Greenfleet.Radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All" />
+
+    <RadioButton
+        android:id="@+id/rbtn_suv"
+        style="@style/Theme.Greenfleet.Radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUV" />
+
+    <RadioButton
+        android:id="@+id/rbtn_cars"
+        style="@style/Theme.Greenfleet.Radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cars" />
+
+    <RadioButton
+        android:id="@+id/rbtn_electro"
+        style="@style/Theme.Greenfleet.Radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electro" />
+
+    <RadioButton
+        android:id="@+id/rbtn_truck"
+        style="@style/Theme.Greenfleet.Radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Truck" />
+
+    <RadioButton
+        android:id="@+id/rbtn_motorcycle"
+        style="@style/Theme.Greenfleet.Radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motorcycle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

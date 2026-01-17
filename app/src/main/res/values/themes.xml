@@ -14,4 +14,9 @@
     <style name="Theme.Greenfleet.GeneralPadding" parent="Base.Theme.Greenfleet">
         <item name="android:padding">20dp</item>
     </style>
+
+    <style name="Theme.Greenfleet.Radiobutton">
+        <item name="android:minWidth">124dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>
