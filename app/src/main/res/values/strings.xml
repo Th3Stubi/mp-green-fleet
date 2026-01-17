@@ -12,4 +12,5 @@
     <string name="fahrzeug">Fahrzeug</string>
     <string name="fleet">Fleet</string>
     <string name="pfeil_nach_rechts">Pfeil nach rechts</string>
+    <string name="item_hinzufuegen_icon">Item hinzufügen Icon</string>
 </resources>
