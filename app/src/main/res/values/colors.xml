@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="btn_color">#008000</color>
     <color name="grey">#808080</color>
+    <color name="stats_card_background_color">#E6E6E6</color>
+    <color name="stats_card_heading_color">#006B5F</color>
+    <color name="stats_card_value_color">#FF000000</color>
+    <color name="stats_card_filter_color">#98BCB8</color>
 </resources>

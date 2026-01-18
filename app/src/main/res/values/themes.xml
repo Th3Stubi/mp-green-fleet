@@ -19,4 +19,38 @@
         <item name="android:minWidth">124dp</item>
         <item name="android:textSize">20sp</item>
     </style>
+
+    <!--Report Card-->
+    <style name="Theme.Greenfleet.StatsCard">
+        <item name="android:background">@drawable/bg_rounded_card</item>
+        <item name="android:radius">10dp</item>
+    </style>
+
+    <!--Report Card Heading-->
+    <style name="Theme.Greenfleet.StatsCardHeading">
+        <item name="android:textSize">20sp</item>
+        <item name="android:lines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:textColor">@color/stats_card_heading_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Report Card Value-->
+    <style name="Theme.Greenfleet.StatsCardValue">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:textColor">@color/stats_card_value_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Report Card Filter-->
+    <style name="Theme.Greenfleet.StatsCardFilter">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:textColor">@color/stats_card_filter_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

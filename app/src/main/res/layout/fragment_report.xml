@@ -30,10 +30,10 @@
 
     <RadioButton
         android:id="@+id/rbtn_all"
-        android:checked="true"
         style="@style/Theme.Greenfleet.Radiobutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="true"
         android:text="All" />
 
     <RadioButton
@@ -70,5 +70,318 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Motorcycle" />
+
+    <!--Start of Stats Flow-->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/stats_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:constraint_referenced_ids="ll_card_total_km, ll_card_total_vehicles, ll_card_total_gas,
+        ll_card_total_kwh, ll_card_total_km_nv, ll_card_total_co2_emissions, ll_card_total_km_ev,
+        ll_card_total_co2_savings"
+        app:flow_horizontalGap="12dp"
+        app:flow_horizontalStyle="spread"
+        app:flow_maxElementsWrap="2"
+        app:flow_verticalGap="20dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rbtn_flow" />
+
+    <!--total km-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_km"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_km"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total kilometers" />
+
+        <TextView
+            android:id="@+id/tv_card_total_km_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17,960 km" />
+
+        <TextView
+            android:id="@+id/tv_card_total_km_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+
+    <!--total vehicle-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_vehicles"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_vehicles"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total vehicles" />
+
+        <TextView
+            android:id="@+id/tv_card_total_vehicles_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/tv_card_total_vehicles_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+
+    <!--total used gas-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_gas"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_gas"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total used gas" />
+
+        <TextView
+            android:id="@+id/tv_card_total_gas_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="848 Liters" />
+
+        <TextView
+            android:id="@+id/tv_card_total_gas_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+
+    <!--total used kwh-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_kwh"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_kwh"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total used kWh" />
+
+        <TextView
+            android:id="@+id/tv_card_total_kwh_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1960 kWh" />
+
+        <TextView
+            android:id="@+id/tv_card_total_kwh_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+
+    <!--total km vn-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_km_nv"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_km_nv"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total used kWh" />
+
+        <TextView
+            android:id="@+id/tv_card_total_km_nv_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1960 kWh" />
+
+        <TextView
+            android:id="@+id/tv_card_total_km_nv_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+
+    <!--co2 emissions-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_co2_emissions"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_co2_emissions"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO\u2082 emissions" />
+
+        <TextView
+            android:id="@+id/tv_card_total_co2_emissions_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.1 t" />
+
+        <TextView
+            android:id="@+id/tv_card_total_co2_emissions_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+
+    <!--total km ev-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_km_ev"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_km_ev"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total kilometers EV" />
+
+        <TextView
+            android:id="@+id/tv_card_total_km_ev_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5,480 km" />
+
+        <TextView
+            android:id="@+id/tv_card_total_km_ev_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+
+    <!--total km ev-->
+    <LinearLayout
+        android:id="@+id/ll_card_total_co2_savings"
+        style="@style/Theme.Greenfleet.StatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_card_total_co2_savings"
+            style="@style/Theme.Greenfleet.StatsCardHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO\u2082 savings via EV" />
+
+        <TextView
+            android:id="@+id/tv_card_total_co2_savings_value"
+            style="@style/Theme.Greenfleet.StatsCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.6 t" />
+
+        <TextView
+            android:id="@+id/tv_card_total_co2_savings_filter"
+            style="@style/Theme.Greenfleet.StatsCardFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month" />
+
+    </LinearLayout>
+    <!--End of Stats Flow-->
+
+    <Button
+        android:id="@+id/btn_download_pdf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:lines="1"
+        android:text="Download PDF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
