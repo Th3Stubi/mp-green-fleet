@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:constraint_referenced_ids="rbtn_all,rbtn_suv,rbtn_cars,rbtn_electro,rbtn_truck,rbtn_motorcycle"
+        app:flow_horizontalAlign="start"
         app:flow_horizontalStyle="spread"
         app:flow_maxElementsWrap="3"
         app:flow_wrapMode="chain"
@@ -31,44 +32,32 @@
     <RadioButton
         android:id="@+id/rbtn_all"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:checked="true"
         android:text="All" />
 
     <RadioButton
         android:id="@+id/rbtn_suv"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="SUV" />
 
     <RadioButton
         android:id="@+id/rbtn_cars"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Cars" />
 
     <RadioButton
         android:id="@+id/rbtn_electro"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Electro" />
 
     <RadioButton
         android:id="@+id/rbtn_truck"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Truck" />
 
     <RadioButton
         android:id="@+id/rbtn_motorcycle"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Motorcycle" />
 
     <!--Start of Stats Flow-->

@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Base.Theme.Greenfleet" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/btn_color</item>
@@ -15,9 +15,13 @@
         <item name="android:padding">20dp</item>
     </style>
 
+    <!--RadioButtons: used in fragment_report.xml-->
     <style name="Theme.Greenfleet.Radiobutton">
-        <item name="android:minWidth">124dp</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <!--Report Card-->
