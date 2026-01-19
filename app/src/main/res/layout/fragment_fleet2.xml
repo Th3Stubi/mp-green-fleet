@@ -80,7 +80,7 @@
 
             <include layout="@layout/fleet_drivers_items" />
 
-            <include layout="@layout/fleet_drivers_items" />
+            <include layout="@layout/fleet_drivers_items2" />
 
             <include layout="@layout/fleet_drivers_items" />
 
@@ -88,7 +88,7 @@
 
             <include layout="@layout/fleet_drivers_items" />
 
-            <include layout="@layout/fleet_drivers_items" />
+            <include layout="@layout/fleet_drivers_items2" />
 
             <include layout="@layout/fleet_drivers_items" />
 
