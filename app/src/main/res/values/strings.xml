@@ -57,4 +57,6 @@
     <string name="account">Account</string>
     <string name="dummy_firstname">Olaf</string>
     <string name="dummy_lastname">Schütter</string>
+    <string name="dummy_vehicle_type2">Golf GTI</string>
+    <string name="dummy_license_plate2">MT 1298F</string>
 </resources>
