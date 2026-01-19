@@ -27,5 +27,10 @@
         android:name="com.example.green_fleet.ReportFragment"
         android:label="fragment_report"
         tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.green_fleet.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history"/>
 
 </navigation>

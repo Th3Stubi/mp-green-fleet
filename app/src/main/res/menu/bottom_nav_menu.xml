@@ -10,20 +10,27 @@
         android:icon="@drawable/ic_nav_steering_wheel"
         android:title="@string/nav_fleet" />
 
+    <item android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_nav_history"
+        android:title="@string/history" />
+
     <item
         android:id="@+id/reportFragment"
         android:icon="@drawable/ic_nav_reports"
         android:title="@string/reports" />
 
-    <!--    <item
+    <!--<item
             android:id="@+id/navigation_history"
             android:icon="@drawable/ic_nav_history"
-            android:title="@string/verlauf" />
+            android:title="@string/verlauf" />-->
+
 
 
         <item
             android:id="@+id/navigation_settings"
             android:icon="@drawable/ic_nav_settings"
-            android:title="@string/einstellungen" />-->
+            android:title="@string/einstellungen" />
+
+
 
 </menu>
