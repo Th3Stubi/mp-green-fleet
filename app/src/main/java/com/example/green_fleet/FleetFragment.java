@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.navigation.fragment.NavHostFragment;
 
 /**
@@ -44,7 +45,7 @@ public class FleetFragment extends Fragment {
      * @return A new instance of fragment FleetFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static FleetFragment newInstance(String param1, String param2,int mode) {
+    public static FleetFragment newInstance(String param1, String param2, int mode) {
         FleetFragment fragment = new FleetFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -72,6 +73,7 @@ public class FleetFragment extends Fragment {
         // return inflater.inflate(R.layout.fragment_fleet, container, false);
         return inflater.inflate(layout, container, false);
     }
+
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         View drivers = view.findViewById(R.id.btn_nav_drivers);
@@ -80,8 +82,6 @@ public class FleetFragment extends Fragment {
                         .navigate(R.id.fleetFragment2)
         );
     }
-
-
 
 
 }

@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:strokeWidth="2dp"
+    app:cardCornerRadius="5dp"
     app:strokeColor="@color/grey"
-    app:cardCornerRadius="5dp">
+    app:strokeWidth="2dp">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,9 +20,9 @@
             android:layout_height="48dp"
             android:contentDescription="@string/fahrer"
             android:src="@drawable/profile_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_driver_name"
@@ -30,8 +30,8 @@
             android:layout_height="wrap_content"
             android:text="Cruz, Essie"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@id/iv_driver"
             app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+            app:layout_constraintStart_toEndOf="@id/iv_driver"
             app:layout_constraintTop_toTopOf="@id/iv_driver" />
 
         <TextView
@@ -40,10 +40,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:text="Regional Sales Manager"
-            android:textSize="14sp"
             android:textColor="@color/grey"
-            app:layout_constraintStart_toStartOf="@id/tv_driver_name"
+            android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+            app:layout_constraintStart_toStartOf="@id/tv_driver_name"
             app:layout_constraintTop_toBottomOf="@id/tv_driver_name" />
 
         <ImageView
@@ -52,9 +52,9 @@
             android:layout_height="24dp"
             android:contentDescription="@string/pfeil_nach_rechts"
             android:src="@drawable/ic_arrow_right"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -18,8 +18,8 @@
     <SearchView
         android:id="@+id/sv_fleet"
         android:layout_width="0dp"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:iconifiedByDefault="false"
         android:queryHint="Filter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,10 +31,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/sv_fleet"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/sv_fleet">
 
 
         <LinearLayout
@@ -43,17 +43,18 @@
             android:orientation="vertical">
 
             <include layout="@layout/history_item" />
+
             <include layout="@layout/history_item" />
+
             <include layout="@layout/history_item" />
+
             <include layout="@layout/history_item" />
+
             <include layout="@layout/history_item" />
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
