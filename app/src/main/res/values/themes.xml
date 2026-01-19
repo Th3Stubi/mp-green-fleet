@@ -16,7 +16,10 @@
 
     <!--General padding for every screen. Is used in activity_main.xml-->
     <style name="Theme.Greenfleet.GeneralPadding" parent="Base.Theme.Greenfleet">
-        <item name="android:padding">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
     </style>
 
     <!--RadioButtons: used in fragment_report.xml-->
