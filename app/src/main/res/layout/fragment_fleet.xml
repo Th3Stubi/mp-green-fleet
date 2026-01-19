@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:padding="3dp"
-        android:text="Vehicles"
+        android:text="@string/vehicles"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_fleet_heading" />
@@ -44,7 +44,7 @@
         android:layout_marginStart="30dp"
         android:clickable="true"
         android:padding="3dp"
-        android:text="Drivers"
+        android:text="@string/drivers"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/btn_nav_vehicles"
         app:layout_constraintTop_toTopOf="@id/btn_nav_vehicles" />
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:iconifiedByDefault="false"
-        android:queryHint="Search for a vehicle ..."
+        android:queryHint="@string/vehicle_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/btn_nav_vehicles"
         app:layout_constraintTop_toBottomOf="@id/btn_nav_vehicles" />

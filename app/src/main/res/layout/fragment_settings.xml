@@ -19,7 +19,7 @@
     <TextView
         android:id="@+id/tv_account"
         style="@style/Theme.Greenfleet.SettingsSubHeadline"
-        android:text="Account"
+        android:text="@string/account"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_settings_heading" />
 
@@ -30,7 +30,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:contentDescription="@string/profilbild"
+        android:contentDescription="@string/profilepicture"
         android:src="@drawable/profile_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,14 +53,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="Olaf" />
+            android:text="@string/dummy_firstname" />
 
         <TextView
             android:id="@+id/tv_lastname"
             style="@style/Theme.Greenfleet.SettingsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Schütter" />
+            android:text="@string/dummy_lastname" />
 
     </LinearLayout>
 

@@ -4,12 +4,10 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Bundle;
+
 import com.google.android.material.button.MaterialButton;
 
 /**
@@ -48,10 +46,10 @@ public class HomeFragment extends Fragment {
 
     private void updateTrackingButton(MaterialButton button, boolean running) {
         if (running) {
-            button.setText(R.string.tracking_stoppen);
+            button.setText(R.string.stop_tracking);
             button.setIconResource(R.drawable.ic_pause);
         } else {
-            button.setText(R.string.tracking_starten);
+            button.setText(R.string.start_tracking);
             button.setIconResource(R.drawable.ic_play);
         }
     }

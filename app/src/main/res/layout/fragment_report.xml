@@ -11,7 +11,7 @@
         style="@style/Theme.Greenfleet.Headline"
         android:layout_width="0dp"
         android:layout_height="64dp"
-        android:text="Report"
+        android:text="@string/report"
         app:layout_constraintEnd_toStartOf="@id/mtbn_date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +20,7 @@
         android:id="@+id/mtbn_date"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="This month"
+        android:text="@string/this_month"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         app:icon="@drawable/ic_expand_down"
@@ -48,32 +48,32 @@
         android:id="@+id/rbtn_all"
         style="@style/Theme.Greenfleet.Radiobutton"
         android:checked="true"
-        android:text="All" />
+        android:text="@string/all" />
 
     <RadioButton
         android:id="@+id/rbtn_suv"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:text="SUV" />
+        android:text="@string/suv" />
 
     <RadioButton
         android:id="@+id/rbtn_cars"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:text="Cars" />
+        android:text="@string/cars" />
 
     <RadioButton
         android:id="@+id/rbtn_electro"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:text="Electro" />
+        android:text="@string/electro" />
 
     <RadioButton
         android:id="@+id/rbtn_truck"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:text="Truck" />
+        android:text="@string/truck" />
 
     <RadioButton
         android:id="@+id/rbtn_motorcycle"
         style="@style/Theme.Greenfleet.Radiobutton"
-        android:text="Motorcycle" />
+        android:text="@string/motorcycle" />
 
     <!--Start of Stats Flow-->
     <androidx.constraintlayout.helper.widget.Flow
@@ -110,7 +110,7 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total kilometers" />
+            android:text="@string/total_kilometers" />
 
         <TextView
             android:id="@+id/tv_card_total_km_value"
@@ -145,7 +145,7 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total vehicles" />
+            android:text="@string/total_vehicles" />
 
         <TextView
             android:id="@+id/tv_card_total_vehicles_value"
@@ -180,7 +180,7 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total used gas" />
+            android:text="@string/total_used_gas" />
 
         <TextView
             android:id="@+id/tv_card_total_gas_value"
@@ -215,7 +215,7 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total used kWh" />
+            android:text="@string/total_used_kwh" />
 
         <TextView
             android:id="@+id/tv_card_total_kwh_value"
@@ -285,7 +285,7 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CO\u2082 emissions" />
+            android:text="@string/co_u2082_emissions" />
 
         <TextView
             android:id="@+id/tv_card_total_co2_emissions_value"
@@ -320,7 +320,7 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total kilometers EV" />
+            android:text="@string/total_kilometers_ev" />
 
         <TextView
             android:id="@+id/tv_card_total_km_ev_value"
@@ -355,7 +355,7 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CO\u2082 savings via EV" />
+            android:text="@string/co_u2082_savings_via_ev" />
 
         <TextView
             android:id="@+id/tv_card_total_co2_savings_value"
