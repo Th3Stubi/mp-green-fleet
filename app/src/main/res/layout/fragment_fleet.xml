@@ -19,39 +19,40 @@
         android:id="@+id/btn_nav_vehicles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="3dp"
         android:text="Vehicles"
         android:textSize="20sp"
-        android:padding="3dp"
-        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_fleet_heading" />
+
     <View
         android:id="@+id/vehicles_indicator"
         android:layout_width="0dp"
         android:layout_height="6dp"
-        android:paddingBottom="10dp"
         android:background="@color/grey"
-        app:layout_constraintTop_toBottomOf="@id/btn_nav_vehicles"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_nav_vehicles"
         app:layout_constraintStart_toStartOf="@id/btn_nav_vehicles"
-        app:layout_constraintEnd_toEndOf="@id/btn_nav_vehicles" />
+        app:layout_constraintTop_toBottomOf="@id/btn_nav_vehicles" />
 
     <TextView
         android:id="@+id/btn_nav_drivers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:clickable="true"
+        android:padding="3dp"
         android:text="Drivers"
         android:textSize="20sp"
-        android:padding="3dp"
-        android:clickable="true"
-        android:layout_marginStart="30dp"
         app:layout_constraintStart_toEndOf="@id/btn_nav_vehicles"
         app:layout_constraintTop_toTopOf="@id/btn_nav_vehicles" />
 
     <SearchView
         android:id="@+id/sv_fleet"
         android:layout_width="0dp"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:iconifiedByDefault="false"
         android:queryHint="Search for a vehicle ..."
         app:layout_constraintEnd_toEndOf="parent"
