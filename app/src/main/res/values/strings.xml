@@ -13,4 +13,8 @@
     <string name="fleet">Fleet</string>
     <string name="pfeil_nach_rechts">Pfeil nach rechts</string>
     <string name="item_hinzufuegen_icon">Item hinzufügen Icon</string>
+    <string name="fahrer">fahrer</string>
+    <string name="cruz_essie">Cruz, Essie</string>
+    <string name="regional_sales_manager">Regional Sales Manager</string>
+    <string name="history">History</string>
 </resources>

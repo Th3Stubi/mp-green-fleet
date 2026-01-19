@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FleetFragment">
+
+    <TextView
+        android:id="@+id/tv_fleet_heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fleet"
+        android:textSize="64sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_nav_vehicles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicles"
+        android:textSize="20sp"
+        android:padding="3dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fleet_heading" />
+    <View
+        android:id="@+id/vehicles_indicator"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:paddingBottom="10dp"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/btn_nav_drivers"
+        app:layout_constraintStart_toStartOf="@id/btn_nav_drivers"
+        app:layout_constraintEnd_toEndOf="@id/btn_nav_drivers" />
+
+    <TextView
+        android:id="@+id/btn_nav_drivers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drivers"
+        android:textSize="20sp"
+        android:padding="3dp"
+        android:clickable="true"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/btn_nav_vehicles"
+        app:layout_constraintTop_toTopOf="@id/btn_nav_vehicles" />
+
+    <SearchView
+        android:id="@+id/sv_fleet"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for a driver ..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btn_nav_vehicles"
+        app:layout_constraintTop_toBottomOf="@id/btn_nav_vehicles" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sv_fleet">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/fleet_drivers_items" />
+
+            <include layout="@layout/fleet_drivers_items" />
+
+            <include layout="@layout/fleet_drivers_items" />
+
+            <include layout="@layout/fleet_drivers_items" />
+
+            <include layout="@layout/fleet_drivers_items" />
+
+            <include layout="@layout/fleet_drivers_items" />
+
+            <include layout="@layout/fleet_drivers_items" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <!--Button bei Fahrer auch machen ?-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_add_item"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

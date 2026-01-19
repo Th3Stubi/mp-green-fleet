@@ -16,11 +16,21 @@
         android:name="com.example.green_fleet.FleetFragment"
         android:label="fragment_fleet"
         tools:layout="@layout/fragment_fleet" />
+    <fragment
+        android:id="@+id/fleetFragment2"
+        android:name="com.example.green_fleet.FleetFragment2"
+        android:label="fragment_fleet2"
+        tools:layout="@layout/fragment_fleet2" />
 
     <fragment
         android:id="@+id/reportFragment"
         android:name="com.example.green_fleet.ReportFragment"
         android:label="fragment_report"
         tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.green_fleet.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history"/>
 
 </navigation>

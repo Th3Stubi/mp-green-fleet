@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/trip_item_root"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardCornerRadius="0dp"
+app:cardElevation="0dp"
+app:strokeWidth="1dp"
+app:cardBackgroundColor="@color/grey">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+
+    <TextView
+        android:id="@+id/tv_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PO2565Q"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@color/ic_launcher_background"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_model"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BMW 316d"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_co2_ausstoss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="135 g/km CO2"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_model"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+
+    <ImageView
+        android:id="@+id/iv_expand"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="expand"
+        android:src="@drawable/ic_expand_down"
+        app:layout_constraintTop_toBottomOf="@id/tv_co2_ausstoss"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- Linke Icon-Spalte -->
+    <ImageView
+        android:id="@+id/iv_sticker"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_plate"
+        android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wien"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toEndOf="@id/iv_sticker"
+            app:layout_constraintTop_toBottomOf="@id/tv_plate"
+            />
+
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prag"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toEndOf="@id/iv_sticker"
+            app:layout_constraintTop_toBottomOf="@id/tv_from"
+            />
+
+    <!-- Details-Block mit visibility ausblenden -->
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_sticker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrer: Markus Rossmann" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start: Wien, 8700 Graz, Weggasse 2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ende: Prag, 8700 Wien, Weggasse 2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distanz: 116 km" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrzeit: 1h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stehzeit: 1h" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
