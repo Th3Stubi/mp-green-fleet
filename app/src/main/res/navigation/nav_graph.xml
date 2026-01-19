@@ -16,6 +16,11 @@
         android:name="com.example.green_fleet.FleetFragment"
         android:label="fragment_fleet"
         tools:layout="@layout/fragment_fleet" />
+    <fragment
+        android:id="@+id/fleetFragment2"
+        android:name="com.example.green_fleet.FleetFragment2"
+        android:label="fragment_fleet2"
+        tools:layout="@layout/fragment_fleet2" />
 
     <fragment
         android:id="@+id/reportFragment"
