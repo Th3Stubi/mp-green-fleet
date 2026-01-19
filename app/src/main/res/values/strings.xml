@@ -4,7 +4,8 @@
     <string name="nav_fleet">Fleet</string>
     <string name="verlauf">Verlauf</string>
     <string name="reports">Reports</string>
-    <string name="tracking_starten">Tracking Starten</string>
+    <string name="tracking_starten">Tracking starten</string>
+    <string name="tracking_stoppen">Tracking stoppen</string>
     <string name="profilbild">Profilbild</string>
     <string name="verfuegbares_fahrzeug">Verfügbares Fahrzeug</string>
     <string name="fahrzeug_waehlen">Fahrzeug wählen</string>
