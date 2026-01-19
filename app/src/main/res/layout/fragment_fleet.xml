@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/tv_fleet_heading"
+        style="@style/Theme.Greenfleet.Headline"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:text="@string/fleet"
-        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -10,8 +10,9 @@
         android:id="@+id/tv_report_heading"
         style="@style/Theme.Greenfleet.Headline"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:text="Report"
+        app:layout_constraintEnd_toStartOf="@id/mtbn_date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

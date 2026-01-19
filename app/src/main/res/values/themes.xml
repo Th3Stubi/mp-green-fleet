@@ -7,7 +7,11 @@
     <style name="Theme.Greenfleet" parent="Base.Theme.Greenfleet" />
 
     <style name="Theme.Greenfleet.Headline">
-        <item name="android:textSize">64sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">12sp</item>
+        <item name="android:autoSizeMaxTextSize">64sp</item>
+        <item name="android:autoSizeStepGranularity">2sp</item>
     </style>
 
     <!--General padding for every screen. Is used in activity_main.xml-->
