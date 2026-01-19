@@ -1,50 +1,30 @@
 package com.example.green_fleet;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SearchView;
+import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FleetFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class FleetFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Switch beetween Vehicles N Drivers
     private static final String ARG_MODE = "mode";
     public static final int MODE_VEHICLES = 1;
     public static final int MODE_DRIVERS = 2;
     private int mode = MODE_VEHICLES;
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    public FleetFragment() {
-        // Required empty public constructor
-    }
+    public FleetFragment() { }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FleetFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static FleetFragment newInstance(String param1, String param2, int mode) {
         FleetFragment fragment = new FleetFragment();
         Bundle args = new Bundle();
@@ -68,20 +48,66 @@ public class FleetFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         int layout = (mode == MODE_DRIVERS) ? R.layout.fragment_fleet2 : R.layout.fragment_fleet;
-        // return inflater.inflate(R.layout.fragment_fleet, container, false);
         return inflater.inflate(layout, container, false);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
         View drivers = view.findViewById(R.id.btn_nav_drivers);
-        drivers.setOnClickListener(v ->
-                NavHostFragment.findNavController(FleetFragment.this)
-                        .navigate(R.id.fleetFragment2)
-        );
+        if (drivers != null) {
+            drivers.setOnClickListener(v ->
+                    NavHostFragment.findNavController(FleetFragment.this)
+                            .navigate(R.id.fleetFragment2)
+            );
+        }
+
+        SearchView sv = view.findViewById(R.id.sv_fleet);
+        ViewGroup list = view.findViewById(R.id.list_container);
+
+        if (sv != null && list != null) {
+            // am Anfang alles ausblenden
+            filterList(list, "");
+
+            sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override public boolean onQueryTextSubmit(String query) { return false; }
+
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    filterList(list, newText);
+                    return true;
+                }
+            });
+        }
     }
 
+    private void filterList(ViewGroup list, String query) {
+        String q = (query == null) ? "" : query.trim().toLowerCase();
 
+        for (int i = 0; i < list.getChildCount(); i++) {
+            View item = list.getChildAt(i);
+
+            // Vehicles
+            TextView plate = item.findViewById(R.id.tv_license_plate);
+            TextView model = item.findViewById(R.id.tv_vehicle_type);
+
+            // Drivers: (bei dir TextView mit dieser ID)
+            TextView driverName = item.findViewById(R.id.tv_driver_name);
+
+            String text = "";
+            if (driverName != null) {
+                text = driverName.getText().toString();
+            } else {
+                String p = (plate != null) ? plate.getText().toString() : "";
+                String m = (model != null) ? model.getText().toString() : "";
+                text = (p + " " + m).trim();
+            }
+
+            // nur anzeigen, wenn gesucht wird
+            boolean show = !q.isEmpty() && text.toLowerCase().contains(q);
+            item.setVisibility(show ? View.VISIBLE : View.GONE);
+        }
+    }
 }
