@@ -55,16 +55,21 @@ public class HistoryFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        View item = view.findViewById(R.id.trip_item_root);
-        if (item == null) return;
 
-        ImageView arrow = item.findViewById(R.id.iv_expand);
-        View details = item.findViewById(R.id.ll_details);
+        ViewGroup list = view.findViewById(R.id.history_list);
+        if (list == null) return;
+        for (int i = 0; i < list.getChildCount(); i++) {
+            View item = list.getChildAt(i);
 
-        arrow.setOnClickListener(v -> {
-            boolean open = details.getVisibility() == View.VISIBLE;
-            details.setVisibility(open ? View.GONE : View.VISIBLE);
-            arrow.setImageResource(open ? R.drawable.ic_expand_down : R.drawable.ic_expand_up);
-        });
-    }
-}
+            ImageView arrow = item.findViewById(R.id.iv_expand);
+            View details = item.findViewById(R.id.ll_details);
+
+            if (arrow == null || details == null) continue;
+
+            arrow.setOnClickListener(v -> {
+                boolean open = details.getVisibility() == View.VISIBLE;
+                details.setVisibility(open ? View.GONE : View.VISIBLE);
+                arrow.setImageResource(open ? R.drawable.ic_expand_down : R.drawable.ic_expand_up);
+            });
+        }
+    }}

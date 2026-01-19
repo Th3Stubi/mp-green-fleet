@@ -13,8 +13,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/beige"
         android:padding="12dp">
-
 
         <TextView
             android:id="@+id/tv_plate"
@@ -30,7 +30,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <TextView
             android:id="@+id/tv_model"
             android:layout_width="0dp"
@@ -38,31 +37,31 @@
             android:text="BMW 316d"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintStart_toEndOf="@id/tv_plate"
+            app:layout_constraintTop_toTopOf="@id/tv_plate"
+            android:layout_marginStart="12dp" />
 
         <TextView
             android:id="@+id/tv_co2_ausstoss"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="135 g/km CO2"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_model" />
-
+            app:layout_constraintStart_toStartOf="@id/tv_model"
+            app:layout_constraintTop_toBottomOf="@id/tv_model"
+             />
 
         <ImageView
             android:id="@+id/iv_expand"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
             android:contentDescription="expand"
             android:src="@drawable/ic_expand_down"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_co2_ausstoss" />
+            app:layout_constraintTop_toBottomOf="@id/tv_co2_ausstoss"
+            android:layout_marginTop="10dp" />
 
-        <!-- Linke Icon-Spalte -->
         <ImageView
             android:id="@+id/iv_sticker"
             android:layout_width="52dp"
@@ -72,30 +71,50 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_plate" />
 
+        <ImageView
+            android:id="@+id/iv_from_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintStart_toEndOf="@id/iv_sticker"
+            app:layout_constraintTop_toTopOf="@id/tv_from"
+            app:layout_constraintBottom_toBottomOf="@id/tv_from" />
 
         <TextView
             android:id="@+id/tv_from"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
             android:text="Wien"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@id/iv_sticker"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/iv_from_icon"
             app:layout_constraintTop_toBottomOf="@id/tv_plate" />
+
+        <ImageView
+            android:id="@+id/iv_to_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_flag"
+            app:layout_constraintStart_toEndOf="@id/iv_sticker"
+            app:layout_constraintTop_toTopOf="@id/tv_to"
+            app:layout_constraintBottom_toBottomOf="@id/tv_to" />
 
         <TextView
             android:id="@+id/tv_to"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
             android:text="Prag"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@id/iv_sticker"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/iv_to_icon"
             app:layout_constraintTop_toBottomOf="@id/tv_from" />
 
-        <!-- Details-Block mit visibility ausblenden -->
         <LinearLayout
             android:id="@+id/ll_details"
             android:layout_width="0dp"
@@ -103,8 +122,8 @@
             android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_sticker">
 
             <TextView
