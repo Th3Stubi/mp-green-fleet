@@ -69,7 +69,7 @@ public class FleetFragment extends Fragment {
 
         if (sv != null && list != null) {
             // am Anfang alles ausblenden
-            filterList(list, "");
+           filterList(list, "");
 
             sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override public boolean onQueryTextSubmit(String query) { return false; }
@@ -93,7 +93,8 @@ public class FleetFragment extends Fragment {
             TextView plate = item.findViewById(R.id.tv_license_plate);
             TextView model = item.findViewById(R.id.tv_vehicle_type);
 
-            // Drivers: (bei dir TextView mit dieser ID)
+            // Drivers: (bei TextView mit dieser ID)
+            // Später eventuell auch Job/Position miteinbinden
             TextView driverName = item.findViewById(R.id.tv_driver_name);
 
             String text = "";
@@ -106,7 +107,8 @@ public class FleetFragment extends Fragment {
             }
 
             // nur anzeigen, wenn gesucht wird
-            boolean show = !q.isEmpty() && text.toLowerCase().contains(q);
+            // boolean show = !q.isEmpty() && text.toLowerCase().contains(q);
+            boolean show = q.isEmpty() || text.toLowerCase().contains(q);
             item.setVisibility(show ? View.VISIBLE : View.GONE);
         }
     }

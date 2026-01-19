@@ -79,13 +79,13 @@
 
             <include layout="@layout/fleet_vehicle_items" />
 
-            <include layout="@layout/fleet_vehicle_items" />
+            <include layout="@layout/fleet_vehicle_items2" />
 
             <include layout="@layout/fleet_vehicle_items" />
 
             <include layout="@layout/fleet_vehicle_items" />
 
-            <include layout="@layout/fleet_vehicle_items" />
+            <include layout="@layout/fleet_vehicle_items2" />
 
             <include layout="@layout/fleet_vehicle_items" />
 

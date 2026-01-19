@@ -21,6 +21,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/this_month"
+        android:layout_marginTop="16dp"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         app:icon="@drawable/ic_expand_down"

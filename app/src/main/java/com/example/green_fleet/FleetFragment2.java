@@ -59,10 +59,10 @@ public class FleetFragment2 extends Fragment {
            // if (job != null) text += " " + job.getText().toString();
 
             // Variante: erst anzeigen wenn gesucht wird
-            boolean show = !q.isEmpty() && text.toLowerCase().contains(q);
+           // boolean show = !q.isEmpty() && text.toLowerCase().contains(q);
 
             // Variante: immer anzeigen wenn Suche leer ist (statt oben)
-            // boolean show = q.isEmpty() || text.toLowerCase().contains(q);
+            boolean show = q.isEmpty() || text.toLowerCase().contains(q);
 
             item.setVisibility(show ? View.VISIBLE : View.GONE);
         }
