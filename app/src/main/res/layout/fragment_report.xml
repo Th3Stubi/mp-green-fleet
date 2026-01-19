@@ -250,14 +250,14 @@
             style="@style/Theme.Greenfleet.StatsCardHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total used kWh" />
+            android:text="@string/total_kilometers_nv" />
 
         <TextView
             android:id="@+id/tv_card_total_km_nv_value"
             style="@style/Theme.Greenfleet.StatsCardValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1960 kWh" />
+            android:text="12,480 km" />
 
         <TextView
             android:id="@+id/tv_card_total_km_nv_filter"
