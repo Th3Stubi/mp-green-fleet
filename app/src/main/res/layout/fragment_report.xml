@@ -374,18 +374,4 @@
     </LinearLayout>
     <!--End of Stats Flow-->
 
-    <Button
-        android:id="@+id/btn_download_pdf"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:autoSizeTextType="uniform"
-        android:lines="1"
-        android:text="Download PDF"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.50" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
